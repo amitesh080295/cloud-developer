@@ -1,19 +1,19 @@
 export const config = {
-  "dev": {
-    "username": "",
-    "password": "",
-    "database": "",
-    "host": "",
-    "dialect": "postgres",
-    "aws_region": "us-east-2",
-    "aws_profile": "default",
-    "aws_media_bucket": "udagram-ruttner-dev"
+  dev: {
+    username: "udagramamiteshdev",
+    password: "PostGres#2020",
+    database: "udagramamiteshdev",
+    host: "udagramamiteshdev.cejeaasmtagr.ap-south-1.rds.amazonaws.com",
+    dialect: "postgres",
+    aws_region: "ap-south-1",
+    aws_profile: "default",
+    aws_media_bucket: "udagram-amitesh-dev",
   },
-  "prod": {
-    "username": "",
-    "password": "",
-    "database": "udagram_prod",
-    "host": "",
-    "dialect": "postgres"
-  }
-}
+  prod: {
+    username: "",
+    password: "",
+    database: "udagram_prod",
+    host: "",
+    dialect: "postgres",
+  },
+};
