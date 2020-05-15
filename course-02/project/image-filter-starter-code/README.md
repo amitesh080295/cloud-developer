@@ -4,9 +4,9 @@ A node express microservice to filter images using the Jimp package. The image_u
 
 ## Steps to run the code locally
 
-After cloning the repository, run npm install
+After cloning the repository, run `npm install`
 
-After the node_modules folder has been created, type the command npm run dev
+After the node_modules folder has been created, type the command `npm run dev`
 
 ## Endpoint information
 
