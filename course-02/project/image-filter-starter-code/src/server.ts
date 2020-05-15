@@ -1,6 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import { filterImageFromURL, deleteLocalFiles } from "./util/util";
+import { type } from "os";
 
 (async () => {
   // Init the Express application
@@ -35,11 +36,11 @@ import { filterImageFromURL, deleteLocalFiles } from "./util/util";
       res.status(400).send("Need a valid image url");
     }
 
-    const localPath = await filterImageFromURL(image_url);
+    const localPath: string = await filterImageFromURL(image_url);
 
     console.log("Localpath: ", localPath);
 
-    const files = [];
+    const files: string[] = [];
     files.push(localPath);
 
     await deleteLocalFiles(files);
